@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		923FC7C1DEFC6EE71DDB808E /* libPods-AudioStream.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F17091032730B69EB9987899 /* libPods-AudioStream.a */; };
+		E64963761DCF244E00625C98 /* CSIOpusEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E64963711DCF244E00625C98 /* CSIOpusEncoder.m */; };
+		E64963771DCF244E00625C98 /* CSIOpusDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E64963731DCF244E00625C98 /* CSIOpusDecoder.m */; };
+		E64963781DCF244E00625C98 /* CSIDataQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = E64963751DCF244E00625C98 /* CSIDataQueue.c */; };
+		E64963871DCF254300625C98 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E64963841DCF24C100625C98 /* libopus.a */; };
+		E656C3791DC649E400D813E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E656C3781DC649E400D813E8 /* main.m */; };
+		E656C37C1DC649E400D813E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E656C37B1DC649E400D813E8 /* AppDelegate.m */; };
+		E656C37F1DC649E400D813E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E656C37E1DC649E400D813E8 /* ViewController.m */; };
+		E656C3821DC649E400D813E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E656C3801DC649E400D813E8 /* Main.storyboard */; };
+		E656C3841DC649E400D813E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E656C3831DC649E400D813E8 /* Assets.xcassets */; };
+		E656C3871DC649E400D813E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E656C3851DC649E400D813E8 /* LaunchScreen.storyboard */; };
+		E656C3921DC649E500D813E8 /* AudioStreamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E656C3911DC649E500D813E8 /* AudioStreamTests.m */; };
+		E656C39D1DC649E500D813E8 /* AudioStreamUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E656C39C1DC649E500D813E8 /* AudioStreamUITests.m */; };
+		E656C3AB1DC6507000D813E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E656C3AA1DC6507000D813E8 /* GoogleService-Info.plist */; };
+		E656C3B71DC65C6900D813E8 /* AudioProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E656C3B61DC65C6900D813E8 /* AudioProcessor.m */; };
+		E656C3C81DC65D5900D813E8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E656C3C71DC65D5900D813E8 /* AudioToolbox.framework */; };
+		E656C3CA1DC65D5E00D813E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E656C3C91DC65D5E00D813E8 /* UIKit.framework */; };
+		E656C3CC1DC65D6300D813E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E656C3CB1DC65D6300D813E8 /* CoreGraphics.framework */; };
+		E68A62D11DCF8CA20050C118 /* AudioPlay.m in Sources */ = {isa = PBXBuildFile; fileRef = E68A62D01DCF8CA20050C118 /* AudioPlay.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E64963831DCF24C100625C98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E649637F1DCF24C000625C98 /* opus.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 60561485D25DA098AD994844;
+			remoteInfo = opus;
+		};
+		E64963851DCF253A00625C98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E649637F1DCF24C000625C98 /* opus.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 87FEE7BA56569457CC835153;
+			remoteInfo = opus;
+		};
+		E656C38E1DC649E500D813E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E656C36C1DC649E400D813E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E656C3731DC649E400D813E8;
+			remoteInfo = AudioStream;
+		};
+		E656C3991DC649E500D813E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E656C36C1DC649E400D813E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E656C3731DC649E400D813E8;
+			remoteInfo = AudioStream;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A9A5E81BDCA08023BB42E3A2 /* Pods-AudioStream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioStream.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioStream/Pods-AudioStream.release.xcconfig"; sourceTree = "<group>"; };
+		C76CD4983249DD331C0FE40B /* Pods-AudioStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioStream.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioStream/Pods-AudioStream.debug.xcconfig"; sourceTree = "<group>"; };
+		E64963701DCF244E00625C98 /* CSIOpusEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSIOpusEncoder.h; sourceTree = "<group>"; };
+		E64963711DCF244E00625C98 /* CSIOpusEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSIOpusEncoder.m; sourceTree = "<group>"; };
+		E64963721DCF244E00625C98 /* CSIOpusDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSIOpusDecoder.h; sourceTree = "<group>"; };
+		E64963731DCF244E00625C98 /* CSIOpusDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSIOpusDecoder.m; sourceTree = "<group>"; };
+		E64963741DCF244E00625C98 /* CSIDataQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSIDataQueue.h; sourceTree = "<group>"; };
+		E64963751DCF244E00625C98 /* CSIDataQueue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CSIDataQueue.c; sourceTree = "<group>"; };
+		E649637F1DCF24C000625C98 /* opus.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = opus.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E656C3741DC649E400D813E8 /* AudioStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E656C3781DC649E400D813E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E656C37A1DC649E400D813E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E656C37B1DC649E400D813E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E656C37D1DC649E400D813E8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E656C37E1DC649E400D813E8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E656C3811DC649E400D813E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E656C3831DC649E400D813E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E656C3861DC649E400D813E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E656C3881DC649E400D813E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E656C38D1DC649E500D813E8 /* AudioStreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioStreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E656C3911DC649E500D813E8 /* AudioStreamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioStreamTests.m; sourceTree = "<group>"; };
+		E656C3931DC649E500D813E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E656C3981DC649E500D813E8 /* AudioStreamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioStreamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E656C39C1DC649E500D813E8 /* AudioStreamUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioStreamUITests.m; sourceTree = "<group>"; };
+		E656C39E1DC649E500D813E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E656C3AA1DC6507000D813E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E656C3B51DC65C6900D813E8 /* AudioProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioProcessor.h; sourceTree = "<group>"; };
+		E656C3B61DC65C6900D813E8 /* AudioProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioProcessor.m; sourceTree = "<group>"; };
+		E656C3C71DC65D5900D813E8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E656C3C91DC65D5E00D813E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E656C3CB1DC65D6300D813E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E68A62CF1DCF8CA20050C118 /* AudioPlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlay.h; sourceTree = "<group>"; };
+		E68A62D01DCF8CA20050C118 /* AudioPlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlay.m; sourceTree = "<group>"; };
+		F17091032730B69EB9987899 /* libPods-AudioStream.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AudioStream.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E656C3711DC649E400D813E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64963871DCF254300625C98 /* libopus.a in Frameworks */,
+				E656C3CC1DC65D6300D813E8 /* CoreGraphics.framework in Frameworks */,
+				E656C3CA1DC65D5E00D813E8 /* UIKit.framework in Frameworks */,
+				E656C3C81DC65D5900D813E8 /* AudioToolbox.framework in Frameworks */,
+				923FC7C1DEFC6EE71DDB808E /* libPods-AudioStream.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E656C38A1DC649E500D813E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E656C3951DC649E500D813E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81627246FD91E2D16BA6532E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C76CD4983249DD331C0FE40B /* Pods-AudioStream.debug.xcconfig */,
+				A9A5E81BDCA08023BB42E3A2 /* Pods-AudioStream.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E473A0D7AAC21B18BC8A810 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E656C3CB1DC65D6300D813E8 /* CoreGraphics.framework */,
+				E656C3C91DC65D5E00D813E8 /* UIKit.framework */,
+				E656C3C71DC65D5900D813E8 /* AudioToolbox.framework */,
+				F17091032730B69EB9987899 /* libPods-AudioStream.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E64963801DCF24C000625C98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E64963841DCF24C100625C98 /* libopus.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E656C36B1DC649E400D813E8 = {
+			isa = PBXGroup;
+			children = (
+				E656C3761DC649E400D813E8 /* AudioStream */,
+				E656C3901DC649E500D813E8 /* AudioStreamTests */,
+				E656C39B1DC649E500D813E8 /* AudioStreamUITests */,
+				E656C3751DC649E400D813E8 /* Products */,
+				81627246FD91E2D16BA6532E /* Pods */,
+				9E473A0D7AAC21B18BC8A810 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E656C3751DC649E400D813E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E656C3741DC649E400D813E8 /* AudioStream.app */,
+				E656C38D1DC649E500D813E8 /* AudioStreamTests.xctest */,
+				E656C3981DC649E500D813E8 /* AudioStreamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E656C3761DC649E400D813E8 /* AudioStream */ = {
+			isa = PBXGroup;
+			children = (
+				E656C3B41DC65C4A00D813E8 /* AudioProcess */,
+				E656C37A1DC649E400D813E8 /* AppDelegate.h */,
+				E656C37B1DC649E400D813E8 /* AppDelegate.m */,
+				E656C37D1DC649E400D813E8 /* ViewController.h */,
+				E656C37E1DC649E400D813E8 /* ViewController.m */,
+				E656C3801DC649E400D813E8 /* Main.storyboard */,
+				E656C3831DC649E400D813E8 /* Assets.xcassets */,
+				E656C3851DC649E400D813E8 /* LaunchScreen.storyboard */,
+				E656C3881DC649E400D813E8 /* Info.plist */,
+				E656C3AA1DC6507000D813E8 /* GoogleService-Info.plist */,
+				E656C3771DC649E400D813E8 /* Supporting Files */,
+			);
+			path = AudioStream;
+			sourceTree = "<group>";
+		};
+		E656C3771DC649E400D813E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E656C3781DC649E400D813E8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E656C3901DC649E500D813E8 /* AudioStreamTests */ = {
+			isa = PBXGroup;
+			children = (
+				E656C3911DC649E500D813E8 /* AudioStreamTests.m */,
+				E656C3931DC649E500D813E8 /* Info.plist */,
+			);
+			path = AudioStreamTests;
+			sourceTree = "<group>";
+		};
+		E656C39B1DC649E500D813E8 /* AudioStreamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E656C39C1DC649E500D813E8 /* AudioStreamUITests.m */,
+				E656C39E1DC649E500D813E8 /* Info.plist */,
+			);
+			path = AudioStreamUITests;
+			sourceTree = "<group>";
+		};
+		E656C3B41DC65C4A00D813E8 /* AudioProcess */ = {
+			isa = PBXGroup;
+			children = (
+				E649637F1DCF24C000625C98 /* opus.xcodeproj */,
+				E656C3B51DC65C6900D813E8 /* AudioProcessor.h */,
+				E656C3B61DC65C6900D813E8 /* AudioProcessor.m */,
+				E68A62CF1DCF8CA20050C118 /* AudioPlay.h */,
+				E68A62D01DCF8CA20050C118 /* AudioPlay.m */,
+				E64963701DCF244E00625C98 /* CSIOpusEncoder.h */,
+				E64963711DCF244E00625C98 /* CSIOpusEncoder.m */,
+				E64963721DCF244E00625C98 /* CSIOpusDecoder.h */,
+				E64963731DCF244E00625C98 /* CSIOpusDecoder.m */,
+				E64963741DCF244E00625C98 /* CSIDataQueue.h */,
+				E64963751DCF244E00625C98 /* CSIDataQueue.c */,
+			);
+			name = AudioProcess;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E656C3731DC649E400D813E8 /* AudioStream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E656C3A11DC649E500D813E8 /* Build configuration list for PBXNativeTarget "AudioStream" */;
+			buildPhases = (
+				134CBD25810ADE130BA4732D /* [CP] Check Pods Manifest.lock */,
+				E656C3701DC649E400D813E8 /* Sources */,
+				E656C3711DC649E400D813E8 /* Frameworks */,
+				E656C3721DC649E400D813E8 /* Resources */,
+				C98A7933DC48AE7B85842FC2 /* [CP] Embed Pods Frameworks */,
+				A41FB554A1978182C3A71DD8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E64963861DCF253A00625C98 /* PBXTargetDependency */,
+			);
+			name = AudioStream;
+			productName = AudioStream;
+			productReference = E656C3741DC649E400D813E8 /* AudioStream.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E656C38C1DC649E500D813E8 /* AudioStreamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E656C3A41DC649E500D813E8 /* Build configuration list for PBXNativeTarget "AudioStreamTests" */;
+			buildPhases = (
+				E656C3891DC649E500D813E8 /* Sources */,
+				E656C38A1DC649E500D813E8 /* Frameworks */,
+				E656C38B1DC649E500D813E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E656C38F1DC649E500D813E8 /* PBXTargetDependency */,
+			);
+			name = AudioStreamTests;
+			productName = AudioStreamTests;
+			productReference = E656C38D1DC649E500D813E8 /* AudioStreamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E656C3971DC649E500D813E8 /* AudioStreamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E656C3A71DC649E500D813E8 /* Build configuration list for PBXNativeTarget "AudioStreamUITests" */;
+			buildPhases = (
+				E656C3941DC649E500D813E8 /* Sources */,
+				E656C3951DC649E500D813E8 /* Frameworks */,
+				E656C3961DC649E500D813E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E656C39A1DC649E500D813E8 /* PBXTargetDependency */,
+			);
+			name = AudioStreamUITests;
+			productName = AudioStreamUITests;
+			productReference = E656C3981DC649E500D813E8 /* AudioStreamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E656C36C1DC649E400D813E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Crane;
+				TargetAttributes = {
+					E656C3731DC649E400D813E8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+					};
+					E656C38C1DC649E500D813E8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E656C3731DC649E400D813E8;
+					};
+					E656C3971DC649E500D813E8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E656C3731DC649E400D813E8;
+					};
+				};
+			};
+			buildConfigurationList = E656C36F1DC649E400D813E8 /* Build configuration list for PBXProject "AudioStream" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E656C36B1DC649E400D813E8;
+			productRefGroup = E656C3751DC649E400D813E8 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E64963801DCF24C000625C98 /* Products */;
+					ProjectRef = E649637F1DCF24C000625C98 /* opus.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E656C3731DC649E400D813E8 /* AudioStream */,
+				E656C38C1DC649E500D813E8 /* AudioStreamTests */,
+				E656C3971DC649E500D813E8 /* AudioStreamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E64963841DCF24C100625C98 /* libopus.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libopus.a;
+			remoteRef = E64963831DCF24C100625C98 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E656C3721DC649E400D813E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E656C3871DC649E400D813E8 /* LaunchScreen.storyboard in Resources */,
+				E656C3AB1DC6507000D813E8 /* GoogleService-Info.plist in Resources */,
+				E656C3841DC649E400D813E8 /* Assets.xcassets in Resources */,
+				E656C3821DC649E400D813E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E656C38B1DC649E500D813E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E656C3961DC649E500D813E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		134CBD25810ADE130BA4732D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A41FB554A1978182C3A71DD8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioStream/Pods-AudioStream-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C98A7933DC48AE7B85842FC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioStream/Pods-AudioStream-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E656C3701DC649E400D813E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E656C37F1DC649E400D813E8 /* ViewController.m in Sources */,
+				E64963781DCF244E00625C98 /* CSIDataQueue.c in Sources */,
+				E656C3B71DC65C6900D813E8 /* AudioProcessor.m in Sources */,
+				E656C37C1DC649E400D813E8 /* AppDelegate.m in Sources */,
+				E64963771DCF244E00625C98 /* CSIOpusDecoder.m in Sources */,
+				E656C3791DC649E400D813E8 /* main.m in Sources */,
+				E68A62D11DCF8CA20050C118 /* AudioPlay.m in Sources */,
+				E64963761DCF244E00625C98 /* CSIOpusEncoder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E656C3891DC649E500D813E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E656C3921DC649E500D813E8 /* AudioStreamTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E656C3941DC649E500D813E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E656C39D1DC649E500D813E8 /* AudioStreamUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E64963861DCF253A00625C98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = opus;
+			targetProxy = E64963851DCF253A00625C98 /* PBXContainerItemProxy */;
+		};
+		E656C38F1DC649E500D813E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E656C3731DC649E400D813E8 /* AudioStream */;
+			targetProxy = E656C38E1DC649E500D813E8 /* PBXContainerItemProxy */;
+		};
+		E656C39A1DC649E500D813E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E656C3731DC649E400D813E8 /* AudioStream */;
+			targetProxy = E656C3991DC649E500D813E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E656C3801DC649E400D813E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E656C3811DC649E400D813E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E656C3851DC649E400D813E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E656C3861DC649E400D813E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E656C39F1DC649E500D813E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E656C3A01DC649E500D813E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E656C3A21DC649E500D813E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C76CD4983249DD331C0FE40B /* Pods-AudioStream.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Osama Petran (KN5943MP2F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Osama Petran (KN5943MP2F)";
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/Analytics/Sources",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseStorage\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleNetworkingUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					"$(PROJECT_DIR)/source/include",
+				);
+				INFOPLIST_FILE = AudioStream/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioStream",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AudioStream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "26ec670a-c4b0-4bb1-974c-986a54c79047";
+			};
+			name = Debug;
+		};
+		E656C3A31DC649E500D813E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9A5E81BDCA08023BB42E3A2 /* Pods-AudioStream.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Osama Petran (KN5943MP2F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Osama Petran (KN5943MP2F)";
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/Analytics/Sources",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseStorage\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleNetworkingUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					"$(PROJECT_DIR)/source/include",
+				);
+				INFOPLIST_FILE = AudioStream/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioStream",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AudioStream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "26ec670a-c4b0-4bb1-974c-986a54c79047";
+			};
+			name = Release;
+		};
+		E656C3A51DC649E500D813E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AudioStreamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..AudioStreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioStream.app/AudioStream";
+			};
+			name = Debug;
+		};
+		E656C3A61DC649E500D813E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AudioStreamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..AudioStreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioStream.app/AudioStream";
+			};
+			name = Release;
+		};
+		E656C3A81DC649E500D813E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AudioStreamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..AudioStreamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AudioStream;
+			};
+			name = Debug;
+		};
+		E656C3A91DC649E500D813E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AudioStreamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..AudioStreamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AudioStream;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E656C36F1DC649E400D813E8 /* Build configuration list for PBXProject "AudioStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E656C39F1DC649E500D813E8 /* Debug */,
+				E656C3A01DC649E500D813E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E656C3A11DC649E500D813E8 /* Build configuration list for PBXNativeTarget "AudioStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E656C3A21DC649E500D813E8 /* Debug */,
+				E656C3A31DC649E500D813E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E656C3A41DC649E500D813E8 /* Build configuration list for PBXNativeTarget "AudioStreamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E656C3A51DC649E500D813E8 /* Debug */,
+				E656C3A61DC649E500D813E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E656C3A71DC649E500D813E8 /* Build configuration list for PBXNativeTarget "AudioStreamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E656C3A81DC649E500D813E8 /* Debug */,
+				E656C3A91DC649E500D813E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E656C36C1DC649E400D813E8 /* Project object */;
+}

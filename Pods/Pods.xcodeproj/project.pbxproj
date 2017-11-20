@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BD61BB6A3BB0F89DCCA5C3E9E34882D /* Pods-AudioStream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4698E7B0057A9F8FBE505F6E6D46DABC /* Pods-AudioStream-dummy.m */; };
+		D4AAF6A7F66CCECA9B039784E5E4B30E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0BBD218328B0619BA3324FDC915AF539 /* Pods-AudioStream-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AudioStream-acknowledgements.plist"; sourceTree = "<group>"; };
+		1B9AD13A755A23C04E6DA68218185BC2 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
+		37837AA8F9DF1783FD3040617F3A6834 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Analytics/Sources/Firebase.h; sourceTree = "<group>"; };
+		3AA2C777DA5AB9FBCFE43B06398682EA /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		40ED930C2DDD09AC0C5DAE5E3B2947CF /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		4698E7B0057A9F8FBE505F6E6D46DABC /* Pods-AudioStream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AudioStream-dummy.m"; sourceTree = "<group>"; };
+		51A595C3E6DC6AA84BD897F29011631B /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		68AD0ED4E063376BCDF4E291C9A892C6 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		81A4271747CB1C44F9281C2F70627924 /* Pods-AudioStream-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioStream-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A623A91CC4CD8AACA8226C083F8A534C /* Pods-AudioStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioStream.debug.xcconfig"; sourceTree = "<group>"; };
+		A8D8D63F4E6D543C3EB48FE4B4FD0093 /* libPods-AudioStream.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AudioStream.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B050B5218E3AE42369AC12406B386E66 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		B9F2E406F4C49C7E737FBF2211D36922 /* Pods-AudioStream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioStream.release.xcconfig"; sourceTree = "<group>"; };
+		C66AC00A5C2D6599CC728DC5B865D920 /* Pods-AudioStream-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AudioStream-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E7ED01B3EF3B94EF249D7F734618B4B6 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		EBAEC0D48646DF401F821C42E1799CE8 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		F1255BC8558899B2DF34063473BE81CD /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		F9C990602721EBD7D13D2EC4AB69B680 /* Pods-AudioStream-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioStream-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		753646C56B6FACF69174971522531187 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AAF6A7F66CCECA9B039784E5E4B30E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05252762D463C7E0AFA6C591045E68D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AA2C777DA5AB9FBCFE43B06398682EA /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		088F16DDF86EFAE63C7C2D3109C703F9 /* Pods-AudioStream */ = {
+			isa = PBXGroup;
+			children = (
+				C66AC00A5C2D6599CC728DC5B865D920 /* Pods-AudioStream-acknowledgements.markdown */,
+				0BBD218328B0619BA3324FDC915AF539 /* Pods-AudioStream-acknowledgements.plist */,
+				4698E7B0057A9F8FBE505F6E6D46DABC /* Pods-AudioStream-dummy.m */,
+				F9C990602721EBD7D13D2EC4AB69B680 /* Pods-AudioStream-frameworks.sh */,
+				81A4271747CB1C44F9281C2F70627924 /* Pods-AudioStream-resources.sh */,
+				A623A91CC4CD8AACA8226C083F8A534C /* Pods-AudioStream.debug.xcconfig */,
+				B9F2E406F4C49C7E737FBF2211D36922 /* Pods-AudioStream.release.xcconfig */,
+			);
+			name = "Pods-AudioStream";
+			path = "Target Support Files/Pods-AudioStream";
+			sourceTree = "<group>";
+		};
+		09FAAAB132C9F9CA23C1F60D01DE5271 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7ED01B3EF3B94EF249D7F734618B4B6 /* GoogleNetworkingUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F6EAF079DA078C18EBD515B5C00CF63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8E133262DF4ED744FDCAC4A1C089735 /* Firebase */,
+				3A035188177FFCF64FD130FB31FA019A /* FirebaseAnalytics */,
+				D885F98B0D6A7CF7E7558D03B19D7333 /* FirebaseDatabase */,
+				F4800B87174FBE3D85BA621647B41E14 /* FirebaseInstanceID */,
+				B00AAF94E46CFB06237E8BA96288247E /* FirebaseStorage */,
+				AA9CFFD1BE3402C00F270ADF5CD1174B /* GoogleInterchangeUtilities */,
+				29C0FE147E3604E7EA39793F3587F668 /* GoogleNetworkingUtilities */,
+				C4D190F6CE3015CEA1B1B3AC09761013 /* GoogleSymbolUtilities */,
+				537A894370A0A740BDD75EF20AA1C022 /* GoogleUtilities */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		18A5ECB4CE3608F259E711E909ACC6EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1255BC8558899B2DF34063473BE81CD /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		209FEE41426460F6BD80BA5947705BE7 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				37837AA8F9DF1783FD3040617F3A6834 /* Firebase.h */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		29C0FE147E3604E7EA39793F3587F668 /* GoogleNetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				09FAAAB132C9F9CA23C1F60D01DE5271 /* Frameworks */,
+			);
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		3A035188177FFCF64FD130FB31FA019A /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				18A5ECB4CE3608F259E711E909ACC6EA /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		3A58AE651FEC8398B4D938BC17E32367 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				088F16DDF86EFAE63C7C2D3109C703F9 /* Pods-AudioStream */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		537A894370A0A740BDD75EF20AA1C022 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				F679ABD5E311BD30510DB808D04CE375 /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		73BED366CB66CF57FCA4F2921C2CDDC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8D8D63F4E6D543C3EB48FE4B4FD0093 /* libPods-AudioStream.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				0F6EAF079DA078C18EBD515B5C00CF63 /* Pods */,
+				73BED366CB66CF57FCA4F2921C2CDDC0 /* Products */,
+				3A58AE651FEC8398B4D938BC17E32367 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8CFC3292B3E053F5D81983AA67AB79AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51A595C3E6DC6AA84BD897F29011631B /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A41C955E92DF1B20B2F4AB0AC1E7CAED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68AD0ED4E063376BCDF4E291C9A892C6 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA9CFFD1BE3402C00F270ADF5CD1174B /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				8CFC3292B3E053F5D81983AA67AB79AD /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		B00AAF94E46CFB06237E8BA96288247E /* FirebaseStorage */ = {
+			isa = PBXGroup;
+			children = (
+				C3442A96B9CB08A53A92932204E90184 /* Frameworks */,
+			);
+			path = FirebaseStorage;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3442A96B9CB08A53A92932204E90184 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B9AD13A755A23C04E6DA68218185BC2 /* FirebaseStorage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4D190F6CE3015CEA1B1B3AC09761013 /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				05252762D463C7E0AFA6C591045E68D8 /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		D885F98B0D6A7CF7E7558D03B19D7333 /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				F98BF37C130C674C6FFE2F0A0CF574C6 /* Frameworks */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		F4800B87174FBE3D85BA621647B41E14 /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				B050B5218E3AE42369AC12406B386E66 /* FIRInstanceID.h */,
+				A41C955E92DF1B20B2F4AB0AC1E7CAED /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		F679ABD5E311BD30510DB808D04CE375 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBAEC0D48646DF401F821C42E1799CE8 /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8E133262DF4ED744FDCAC4A1C089735 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				209FEE41426460F6BD80BA5947705BE7 /* Analytics */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		F98BF37C130C674C6FFE2F0A0CF574C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40ED930C2DDD09AC0C5DAE5E3B2947CF /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		920C5CD88FE9D28AE861BCB827CE70DA /* Pods-AudioStream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F8D326537177AB2732843EF4E630CCF /* Build configuration list for PBXNativeTarget "Pods-AudioStream" */;
+			buildPhases = (
+				CDAAC18C9D171C1E9CA7F6F17F70A65D /* Sources */,
+				753646C56B6FACF69174971522531187 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AudioStream";
+			productName = "Pods-AudioStream";
+			productReference = A8D8D63F4E6D543C3EB48FE4B4FD0093 /* libPods-AudioStream.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 73BED366CB66CF57FCA4F2921C2CDDC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				920C5CD88FE9D28AE861BCB827CE70DA /* Pods-AudioStream */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDAAC18C9D171C1E9CA7F6F17F70A65D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BD61BB6A3BB0F89DCCA5C3E9E34882D /* Pods-AudioStream-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		42287DDF97330524BA3EF220F0276DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A97E72195209FC9E9689968C5C4CCB48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9F2E406F4C49C7E737FBF2211D36922 /* Pods-AudioStream.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AE9439C22469D35336242DD983DB5C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BEDEB6247C9A941EED9597EBE9D5CEDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A623A91CC4CD8AACA8226C083F8A534C /* Pods-AudioStream.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9439C22469D35336242DD983DB5C5F /* Debug */,
+				42287DDF97330524BA3EF220F0276DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F8D326537177AB2732843EF4E630CCF /* Build configuration list for PBXNativeTarget "Pods-AudioStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDEB6247C9A941EED9597EBE9D5CEDD /* Debug */,
+				A97E72195209FC9E9689968C5C4CCB48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
